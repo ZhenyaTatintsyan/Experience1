@@ -1,4 +1,35 @@
 Here are summarized the Git basic commands:
 
-
-
+git config --global user.name "Zhenya Tatintsyan" - configure the author name to be used with your commits.
+git config --global user.email zhenya@instigatemobile.com -configure the author email address to be used with your commits.  
+git init - Create a new local repository
+git clone /path/to/repository - create a working copy of a local repository
+git clone username@host:/path/to/repository - use for a remote server
+git add <filename> - add one file to staging
+git add * - add more files to staging
+git commit -m "commit message" - Commit changes to head
+git commit -a - commit any files you've added with git add, and also commit any files you've changed since then
+git push origin master - send changes to the master branch of your remote repository
+git status - List the files you've changed and those you still need to add or commit
+git remote origin <server> - Connect to a remote server
+git remote -v - List all currently configured remote repositories
+git branch <branchname> - create a new branch
+git checkout -b <branchname> - Create a new branch and switch to it
+git checkout <branchname> - switch from one branch to another
+git branch - List all the branches in your repo, and also tell you what branch you're currently in
+git branch -d - delete the feature branch
+git push origin <branchname> - Push the branch to your remote repository, so others can use it
+git push --all origin - Push all branches to your remote repository
+git push origin :<branchname> - delete a branch on your remote repository
+git pull - Fetch and merge changes on the remote server to your working directory
+git merge <branchname> - to merge a different branch into your ctive branch
+git diff - view all merge conflicts
+git diff --base <filename> - view all conflicts against the base file
+git diff <sourcebranch> <targetbranch>
+git add <filename> - After you have manually resolved any conflicts, you mark the changed file
+git tag 1.0.0 <commitID> - You can use tagging to mark a significant changeset, such as a release
+git log - CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using
+git push --tags origin - Push all tags to remote repository
+git checkout -- <filename> - Undo local changes - If you mess up, you can replace the changes in your working tree with the last content in head: Changes already added to the index, as well as new files, will be kept
+git fetch origin -> git reset --hard origin/master - Insead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this
+git grep "foo ()" - Search the workoing directory "for foo()"
