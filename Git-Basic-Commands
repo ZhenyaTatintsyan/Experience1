@@ -33,3 +33,4 @@ git push --tags origin - Push all tags to remote repository
 git checkout -- <filename> - Undo local changes - If you mess up, you can replace the changes in your working tree with the last content in head: Changes already added to the index, as well as new files, will be kept
 git fetch origin -> git reset --hard origin/master - Insead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this
 git grep "foo ()" - Search the workoing directory "for foo()"
+
